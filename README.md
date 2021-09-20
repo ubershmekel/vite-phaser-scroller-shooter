@@ -21,6 +21,15 @@ This is an example template. To try it out do the following:
 
 Btw the live demo gets built by the github action at `.github/workflows/main.yml`. 
 
+## Assets workflow design
+
+* I want to Typescript auto-complete reference all my assets (animations, sounds, images, tiles, json).
+* I just want to place image files and have the build system figure which files to process.
+* Which means either an npm script or `vite build` will:
+  * Generate a '.ts' file with URLs, keys, and a preload function.
+  * The names will be the full filename, including extension, with no periods `.`.
+  * I could let it handle folders, but that doesn't seem important for version zero.
+
 ## Why this tech stack
 
 I looked at quite a few web game frameworks. I settled on this setup because:
