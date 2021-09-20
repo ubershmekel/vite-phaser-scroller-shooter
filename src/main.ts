@@ -1,22 +1,15 @@
 import './style.css'
 
-// const app = document.querySelector<HTMLDivElement>('#app')!
-
-// app.innerHTML = `
-//   <h1>Hello Vite!</h1>
-//   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-//   <div id="game"></div>
-// `;
-
 import 'phaser';
 import { MenuScene } from './menu-scene';
+import { gameHeight, gameWidth } from './config';
 
 const GameConfig: Phaser.Types.Core.GameConfig = {
   title: 'ExampleGame',
-  url: 'https://github.com/digitsensitive/phaser3-typescript',
+  url: 'https://github.com/ubershmekel/vite-phaser-scroller-shooter',
   version: '2.0',
-  width: 800,
-  height: 600,
+  width: gameWidth,
+  height: gameHeight,
   type: Phaser.AUTO,
   parent: 'app',
   scene: [MenuScene],

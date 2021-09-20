@@ -8,8 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ff3c00;
-  height: 98%;
-  width: 98%;
+  height: 96vh;
   margin: auto;
 }
 
